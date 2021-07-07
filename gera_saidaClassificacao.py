@@ -15,6 +15,7 @@ def gera_saida_classificacao(
     quantidade_de_colunas = x.shape[1]
     qd = quantidade_de_colunas - 1
     xqd = x[:,:qd]
+    y = 0
 
     if funcao == 'pol1':
         a  = 4.0 * np.random.rand(1, qd) - 2.0
